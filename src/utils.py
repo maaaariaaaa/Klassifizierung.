@@ -13,6 +13,7 @@ from torchvision.io import read_image
 import cv2
 import xml.etree.ElementTree as ET
 
+#Quelle: https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Object-Detection/blob/master/utils.py
 def save_checkpoint(epoch, model, optimizer):
     """
     Save model checkpoint.
@@ -27,6 +28,7 @@ def save_checkpoint(epoch, model, optimizer):
     filename = 'checkpoint_ssd300.pth.tar'
     torch.save(state, filename)
 
+#Quelle: https://stackoverflow.com/questions/27152904/calculate-overlapped-area-between-two-rectangles
 def area(a, b):  
     """
     returns None, if rectangles dont intersect, otherwise returns the area of intersection
